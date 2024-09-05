@@ -22,7 +22,7 @@ app.post("/file/create", (req, res) => {
 app.delete("/file/:filename", (req, res) => {
   const {filename} = req.params;
   if (deleteAFile(filename)){
-    res.status(200).send({message: "FFile Deleted Successfully"});
+    res.status(200).send({message: "File Deleted Successfully"});
   }
   else{
     res.status(400).send({message: "File doesn't exists"});
